@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+/* Tipografia */
+body {
+  line-height: 1.5; /* Melhora a legibilidade */
+  -webkit-font-smoothing: antialiased; /* Melhora fontes no Chrome/Safari */
+  -moz-osx-font-smoothing: grayscale; /* Melhora fontes no Firefox */
+  font-family: sans-serif; /* Substitua pela fonte que preferir */
+  
+}
+
+/* Remover estilos padrão de listas */
+ul, ol {
+  list-style: none;
+}
+
+/* Remover sublinhados e margens de links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Remover bordas de botões e inputs */
+
+/* Tabelas sem bordas */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+

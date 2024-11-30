@@ -1,38 +1,70 @@
+@import url('./variables.css');
+
+body {
+
+    background: var(--cor-deFundo-modoClaro);
+    font-family: var(--fontePrincipal);
+    color: var(--cor-fonte-modoClaro);
+    
+}
+
 .App {
-  text-align: center;
+
+    display: flex;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+.conteudo {
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    height: 100vh;
+    box-sizing: border-box;
+
+}
+    
+  @-moz-keyframes shine {
+    0% {
+      background-position: 0;
+    }
+    60% {
+      background-position: 180px;
+    }
+    100% {
+      background-position: 180px;
+    }
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  @-webkit-keyframes shine {
+    0% {
+      background-position: 0;
+    }
+    60% {
+      background-position: 180px;
+    }
+    100% {
+      background-position: 180px;
+    }
   }
-  to {
-    transform: rotate(360deg);
+  
+  @-o-keyframes shine {
+    0% {
+      background-position: 0;
+    }
+    60% {
+      background-position: 180px;
+    }
+    100% {
+      background-position: 180px;
+    }
   }
-}
+  
+  @keyframes shine {
+    0% {
+      background-position: 0;
+    }
+    60% {
+      background-position: 180px;
+    }
+    100% {
+      background-position: 180px;
+    }
+  }

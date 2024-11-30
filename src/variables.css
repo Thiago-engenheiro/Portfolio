@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face {
+
+    font-family: 'Gilroy-Light';
+    src: url('/src/extras/fontes/Gilroy-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+
+    font-family: 'Gilroy-SemiBold';
+    src: url('/src/extras/fontes/Gilroy-SemiBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+
+    font-family: 'Gilroy-ThinItalic';
+    src: url('/src/extras/fontes/Gilroy-ThinItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+:root {
+
+    /* Variáveis para fontes */
+
+    --fontePrincipal: "Kanit", sans-serif;
+    --fonte-secundaria: 'Gilroy-SemiBold', sans-serif;
+    --fonte-terciaria: 'Gilroy-ThinItalic', sans-serif;
+      
+    /* Variáveis para cores */
+
+        /* cor modo escuro */
+
+        --cor-deFundo-modoClaro: #F9F1F0;
+
+        --cor-fonte-modoClaro:  black;
+
+        --cor-card-ModoClaro:  black;
+        --cor-card-ModoClaro-destaque01:  #D8C9C7;
+        --cor-card-ModoClaro-destaque03:  #131112;
+
+        --cor-barraLateral-01-ModoEscuro:  #3B3833;
+        --cor-barraLateral-02-ModoEscuro: #32373B;
+        --cor-barraLateral-03-ModoEscuro: #D8C9C7;
+
+        /* cor modo escuro */
+
+        --cor-deFundo-modoEscuro: #131112;
+
+        --cor-fonte-modoEscuro:  white;
+
+        --cor-card-ModoEscuro:  #3B3833;
+        --cor-card-ModoEscuro-destaque01:  #F9F1F0;
+        --cor-card-ModoEscuro-destaque03:  #020308;
+
+        --cor-barraLateral-01-ModoEscuro:  #FADCD9;
+        --cor-barraLateral-02-ModoEscuro: #D5C1B5;
+        --cor-barraLateral-03-ModoEscuro: #D8C9C7;
+
+        /* cor Global */
+
+        --cor-destaque: #00B5DE;
+
+}
