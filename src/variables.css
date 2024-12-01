@@ -37,7 +37,7 @@
       
     /* Variáveis para cores */
 
-        /* cor modo escuro */
+        /* cor modo claro */
 
         --cor-deFundo-modoClaro: #F9F1F0;
 
@@ -47,9 +47,9 @@
         --cor-card-ModoClaro-destaque01:  #D8C9C7;
         --cor-card-ModoClaro-destaque03:  #131112;
 
-        --cor-barraLateral-01-ModoEscuro:  #3B3833;
-        --cor-barraLateral-02-ModoEscuro: #32373B;
-        --cor-barraLateral-03-ModoEscuro: #D8C9C7;
+        --cor-barraLateral-01-ModoClaro:  #3B3833;
+        --cor-barraLateral-02-ModoClaro: #2E2B26;
+        --cor-barraLateral-03-ModoClaro: #4F4A45;
 
         /* cor modo escuro */
 

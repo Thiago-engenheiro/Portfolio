@@ -23,13 +23,12 @@ export function CardFlutante () {
               
               <ul className='cardFlutante1'>
 
-                
-                
+                    
                 <li>
 
                   <p>
 
-                    Modo escuro
+                    Modo claro
 
                   </p>
 

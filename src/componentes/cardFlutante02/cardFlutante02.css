@@ -51,7 +51,16 @@
     position: absolute;
     width: 98.5%;
     height: 95.5%;
-    background: linear-gradient(rgba(19, 19, 19, 1), rgba(51, 54, 61, 1));
+    background: linear-gradient(to bottom, 
+
+        var(--cor-barraLateral-01-ModoClaro), 
+        var(--cor-barraLateral-02-ModoClaro), 
+        var(--cor-barraLateral-03-ModoClaro)
+
+    );
+    backdrop-filter: blur(10px);
+    background-size: 100% 300%;
+    animation: mover-gradient 5s infinite linear;
     border-radius: 5px;
     color: white;
     display: flex;
@@ -171,4 +180,19 @@
     100% {
       transform: rotateZ(360deg);
     }
+  }
+
+
+  @keyframes mover-gradient {
+
+    0% {
+      background-position: 0% 0%; /* Começa no topo */
+    }
+    50% {
+      background-position: 0% 100%; /* Desce até o final */
+    }
+    100% {
+      background-position: 0% 0%; /* Volta ao topo */
+    }
+  
   }

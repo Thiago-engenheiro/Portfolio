@@ -4,9 +4,9 @@
 
     background: linear-gradient(to bottom, 
 
-        var(--cor-barraLateral-01-ModoEscuro), 
-        var(--cor-barraLateral-02-ModoEscuro), 
-        var(--cor-barraLateral-03-ModoEscuro)
+        var(--cor-barraLateral-01-ModoClaro), 
+        var(--cor-barraLateral-02-ModoClaro), 
+        var(--cor-barraLateral-03-ModoClaro)
 
     );
 
@@ -34,30 +34,67 @@
 
 .barra-lateral li:first-child {
    
-    margin: 50px 0px;
+  margin: 50px 0px 0px 0px;
     
 }
 
-.barra-lateral li {
 
-    margin: 20px 0px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.lista {
+
+  margin: 20px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  width: 100px;
+  border-radius: 90px 0 0 90px;
   
 }
 
+.lista:hover .ham6 .line {
+   
+  stroke:black;
+  
+}
+
+.lista:hover .continerIcone .container {
+   
+  fill: black;
+  
+}
+
+.listaAfastar {
+
+  margin: 150px 0px 0px 0px;
+  
+}
+
+.lista:hover {
+
+  background: var(--cor-deFundo-modoClaro);
+
+}
+
+
 .continerIcone {
 
-    width: 80px;
-    height: 80px;
+  width: 80px;
+  height: 80px;
 
 }
 
 .icone {
 
-    width: 40px;
-    cursor: pointer;
+  width: 40px;
+  cursor: pointer;
+  margin: 20px 0px 20px 0px;
+
+}
+
+.primeiro {
+
+  margin: 500px;
+
 
 }
 
@@ -67,6 +104,18 @@
     transition: box-shadow 0.3s ease;
     animation: pulsar 1.5s infinite ease-in-out;  /* Animação de aumento e diminuição */
    
+}
+
+.navegacaoLink:hover {
+  
+  transform: scale(1.1);
+
+}
+
+.navegacaoLink:active {
+
+  animation: pulsar 1s;
+
 }
 
 @keyframes pulsar {
