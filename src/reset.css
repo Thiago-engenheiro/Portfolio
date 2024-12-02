@@ -33,3 +33,9 @@ table {
   border-spacing: 0;
 }
 
+mark {
+  background: none; /* Remove o fundo amarelo */
+  color: inherit;    /* Herda a cor do texto do elemento pai */
+  font-weight: normal; /* Remove o negrito */
+  text-decoration: none; /* Remove quaisquer sublinhados ou linhas */
+}

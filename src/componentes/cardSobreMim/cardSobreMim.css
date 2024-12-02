@@ -1,0 +1,157 @@
+.CardSobreMim {
+
+  background: linear-gradient(to  right, 
+
+        var(--cor-barraLateral-01-ModoEscuro), 
+        var(--cor-barraLateral-02-ModoEscuro), 
+        var(--cor-barraLateral-03-ModoEscuro)
+
+    );
+
+    background-size: 100% 300%;
+    animation: mover-gradient 5s infinite linear;
+
+  margin: 20px 0px 0px 0px;
+  height: 500px;
+  width: 600px;
+  border-radius: 24px;
+  padding: 20px;
+
+}
+
+.DecoracaoFlor {
+
+  width: 120px;
+  animation: rotate 25s linear infinite;
+  
+
+}
+
+.titulo__engenheiro {
+
+  font-family: var(--fonte-quitenaria);
+  font-size: 36px;
+  text-transform: uppercase;
+  margin: 50px 0px 0px 0px;
+  font-weight: bold;
+
+}
+
+.frase__auxiliar {
+
+  font-family: var(--fonte-secundaria);
+  font-size: 25px;
+  text-transform: uppercase;
+  margin: 10px 0px 0px 0px;
+
+}
+
+.subtitulo {
+
+  font-family: var(--fonte-quitenaria);
+  font-size: 18px;
+  text-transform: uppercase;
+  margin: 150px 0px 0px 0px;
+
+}
+
+.CardSobreMim__direto {
+
+  display: flex;
+  align-items: center;
+  position: relative;
+  background: linear-gradient(to  right, 
+
+        #d8c4bb, 
+        var(--cor-barraLateral-02-ModoEscuro), 
+        var(--cor-barraLateral-03-ModoEscuro)
+
+    );
+
+    background-size: 100% 300%;
+    animation: mover-gradient 5s infinite linear;
+    border-radius: 24px 24px 0 0;
+    padding: 20px;
+    top: -525px;
+    left: 230px;
+    justify-content: end;
+    gap: 15%;
+    width: 350px;
+
+}
+
+.CardSobreMim__direto__titulo {
+
+  font-size: var(--fonte-secundaria);
+  font-size: 35px;
+
+}
+
+.Seta {
+
+  filter: invert(1);
+  width: 60px;
+  transition: border-color 0.3s ease;
+  border: 3px solid transparent;
+  border-radius: 50%;
+  cursor: pointer;
+ 
+}
+
+.Seta:hover {
+
+  
+  animation: rainbow-border 5s infinite linear;
+
+}
+
+
+@keyframes rotate {
+    0% {
+      transform: rotate(0deg); /* Começa com a rotação de 0 graus */
+    }
+    100% {
+      transform: rotate(360deg); /* Finaliza com a rotação de 360 graus */
+    }
+  }
+
+@keyframes mover-gradient {
+
+    0% {
+      background-position: 0% 0%; /* Começa no topo */
+    }
+    50% {
+      background-position: 0% 100%; /* Desce até o final */
+    }
+    100% {
+      background-position: 0% 0%; /* Volta ao topo */
+    }
+
+}
+
+@keyframes rainbow-border {
+  0% {
+    border-color: red;
+  }
+  14% {
+    border-color: orange;
+  }
+  28% {
+    border-color: yellow;
+  }
+  42% {
+    border-color: green;
+  }
+  57% {
+    border-color: blue;
+  }
+  71% {
+    border-color: indigo;
+  }
+  85% {
+    border-color: violet;
+  }
+  100% {
+    border-color: red;
+  }
+}

@@ -2,26 +2,43 @@
 
 body {
 
-    background: var(--cor-deFundo-modoClaro);
-    font-family: var(--fontePrincipal);
-    color: var(--cor-fonte-modoClaro);
-    
+  background: var(--cor-deFundo-modoClaro);
+  font-family: var(--fontePrincipal);
+  color: var(--cor-fonte-modoClaro);
+
+  
 }
 
 .App {
 
-    display: flex;
+  display: flex;
 
 }
 
 .conteudo {
 
-    height: 100vh;
-    box-sizing: border-box;
+  height: 100vh;
+  box-sizing: border-box;
 
 }
+
+main {
+
+  padding: 20px;
+
+}
+
+.cards {
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+
+}
+
+
     
-  @-moz-keyframes shine {
+@-moz-keyframes shine {
     0% {
       background-position: 0;
     }

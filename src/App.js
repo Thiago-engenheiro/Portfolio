@@ -1,5 +1,8 @@
 import './App.css'
 import BarraLateral from './componentes/barraLateral';
+import CardSobreMim from './componentes/cardSobreMim';
+import Foto from './componentes/foto';
+import Titulo from './componentes/Titulo';
 
 
 function App() {
@@ -10,15 +13,19 @@ function App() {
 
       <section className='conteudo'>
 
-        <header className="App-header">
-          
-        
-         
+        <main>
 
-        </header>
+          <Titulo></Titulo>
 
-        <main></main>
-        <footer></footer>
+          <section className='cards'>
+
+            <CardSobreMim></CardSobreMim>
+
+           <Foto></Foto>
+    
+          </section>
+
+        </main>
 
       </section>
 

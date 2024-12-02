@@ -27,6 +27,16 @@
 
 }
 
+@font-face {
+
+    font-family: 'Gilroy-Thin';
+    src: url('/src/extras/fontes/Gilroy-Thin.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
 :root {
 
     /* Variáveis para fontes */
@@ -34,6 +44,8 @@
     --fontePrincipal: "Kanit", sans-serif;
     --fonte-secundaria: 'Gilroy-SemiBold', sans-serif;
     --fonte-terciaria: 'Gilroy-ThinItalic', sans-serif;
+    --fonte-quarteneria: 'Gilroy-Light', sans-serif;
+    --fonte-quitenaria: 'Gilroy-Thin', sans-serif;
       
     /* Variáveis para cores */
 
@@ -61,7 +73,7 @@
         --cor-card-ModoEscuro-destaque01:  #F9F1F0;
         --cor-card-ModoEscuro-destaque03:  #020308;
 
-        --cor-barraLateral-01-ModoEscuro:  #FADCD9;
+        --cor-barraLateral-01-ModoEscuro:  #E4D2D0;
         --cor-barraLateral-02-ModoEscuro: #D5C1B5;
         --cor-barraLateral-03-ModoEscuro: #D8C9C7;
 
