@@ -6,9 +6,9 @@ export function Foto() {
 
         <div className='continerFoto'>
 
-            <img className='MinhaFoto' src="/MinhaFoto/AirBrush_20241201171531.jpg" alt=""/>
+            <img className='MinhaFoto' src="/MinhaFoto/AirBrush_20241201171531.jpg" alt="Minha foto"/>
 
-            <img className='iconeAumentar' src="" alt=""/>
+            <img className='iconeAumentar' src="/MinhaFoto/Zoom.png" alt="Zoom"/>
 
         </div>
 

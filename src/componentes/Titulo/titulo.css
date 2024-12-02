@@ -6,7 +6,7 @@
     --ani-color: rgba(95, 3, 244, 0);
     --color-gar: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
     letter-spacing: 3px;
-    font-size: 1.5em;
+    font-size: 2.5em;
     font-family: var(--fonte-terciaria);
     text-transform: uppercase;
     color: transparent;
@@ -29,31 +29,21 @@
     animation: 8s ani infinite;
     border-bottom: 2px solid transparent;
     white-space: nowrap;
-  }
-  
-  .button:hover .front-text {
-
     width: 100%;
     -webkit-text-stroke: 1px var(--ani-color);
   }
-
+  
 mark {
 
     font-family: var(--fonte-secundaria);
     font-weight: bold;
     color: black;
-
-}
-
-.button:hover mark {
-
     font-family: var(--fonte-secundaria);
     font-weight: bold;
     --stroke-color: black;
     --ani-color: rgba(95, 3, 244, 0);
     --color-gar: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
     color: transparent;
-
 }
   
   @keyframes ani {

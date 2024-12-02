@@ -48,9 +48,9 @@ export function BarraLateral () {
                       
                     </li>
 
-                    <li className='listaAfastar lista'>
+                    <li className='listaAfastar lista listaAtiva'>
 
-                    <a href="http://localhost:3000/" className='ativo navegacaoLink'>
+                    <a href="http://localhost:3000/" className='linkativo navegacaoLink'>
 
                         <img className="icone" src="/iconesMenu/HomeBranca.png" alt="Ícone Home"/>
 

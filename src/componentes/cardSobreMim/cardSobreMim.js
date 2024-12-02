@@ -15,7 +15,13 @@ export function CardSobreMim () {
 
                     <h2 className='titulo__engenheiro'>
 
-                        Engenheiro de software
+                        Engenheiro de software 
+
+                    </h2>
+
+                    <h2 className='subtitulo__engenheiro'>
+
+                        DESENVOLVEDOR REACT
 
                     </h2>
 
@@ -38,10 +44,6 @@ export function CardSobreMim () {
                     </h3>
 
                 </div>
-
-                <p>
-
-                </p>
 
             </div>
 

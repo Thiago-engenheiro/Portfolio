@@ -16,6 +16,9 @@
     width: 100px;
     box-sizing: border-box;
     padding: 20px 0px; 
+    border: 3px solid transparent;
+    border-width: 0px 2px 0px 0px;
+    animation: rainbow-border2 5s infinite linear;
     
 }
 
@@ -63,7 +66,7 @@
   
 }
 
-.lista:hover .icone {
+.lista:hover .icone:not(.linkativo) { 
    
   filter: invert(1);
   
@@ -106,9 +109,9 @@
 
 .expandir:hover {
 
-    display: inline-block;  /* Para garantir que o item se comporte corretamente durante a animação */
-    transition: box-shadow 0.3s ease;
-    animation: pulsar 1.5s infinite ease-in-out;  /* Animação de aumento e diminuição */
+  display: inline-block;  /* Para garantir que o item se comporte corretamente durante a animação */
+  transition: box-shadow 0.3s ease;
+  animation: pulsar 9.9s infinite ease-in-out;  /* Animação de aumento e diminuição */
    
 }
 
@@ -122,6 +125,30 @@
 
   animation: pulsar 1s;
 
+}
+
+.listaAtiva {
+
+  background: var(--cor-deFundo-modoClaro);
+  border: 3px solid transparent;
+  border-width: 3px 0px 3px 3px;
+  animation: rainbow-border2 5s infinite linear;
+
+}
+
+.linkativo {
+
+  display: inline-block;  
+  transition: box-shadow 0.3s ease; 
+
+}
+
+.listaAtiva .linkativo .icone {
+  filter: invert(1); 
+}
+
+.lista:hover .linkativo .icone {
+  filter: invert(1);
 }
 
 @keyframes pulsar {
@@ -148,4 +175,31 @@
       background-position: 0% 0%; /* Volta ao topo */
     }
 
+}
+
+@keyframes rainbow-border2 {
+  0% {
+    border-color: red;
+  }
+  14% {
+    border-color: orange;
+  }
+  28% {
+    border-color: yellow;
+  }
+  42% {
+    border-color: green;
+  }
+  57% {
+    border-color: blue;
+  }
+  71% {
+    border-color: indigo;
+  }
+  85% {
+    border-color: violet;
+  }
+  100% {
+    border-color: red;
+  }
 }

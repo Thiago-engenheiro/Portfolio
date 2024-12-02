@@ -2,6 +2,7 @@ import './App.css'
 import BarraLateral from './componentes/barraLateral';
 import CardSobreMim from './componentes/cardSobreMim';
 import Foto from './componentes/foto';
+import CardPortfolio from './componentes/portfolio';
 import Titulo from './componentes/Titulo';
 
 
@@ -19,9 +20,11 @@ function App() {
 
           <section className='cards'>
 
-            <CardSobreMim></CardSobreMim>
+          <CardSobreMim></CardSobreMim>
 
-           <Foto></Foto>
+          <Foto></Foto>
+
+          <CardPortfolio></CardPortfolio>
     
           </section>
 

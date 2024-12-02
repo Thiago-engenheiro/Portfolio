@@ -80,18 +80,6 @@ export function CardFlutante () {
               
             </div>
           </div>
-          <div className="front1">
-            <ul className="cardFlutante02">
-              <li>
-                <p>Português</p>
-                <button className="botaoPais"></button>
-              </li>
-              <li>
-                <p>Inglês</p>
-                <button className="botaoPais02"></button>
-              </li>
-            </ul>
-          </div>
         </div>
       </div>
         

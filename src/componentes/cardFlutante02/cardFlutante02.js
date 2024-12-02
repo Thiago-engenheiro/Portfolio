@@ -4,54 +4,47 @@ export function CardFlutante02 () {
 
     return (
 
-    <div className="card">
-      <div className="content">
-        <div className="back">
-          <div className="back-content">
-            
-        <ul className='cardFlutante02'>
+      <div className="cardFlutante02">
+     
+        <div className="contentFlutante02">
 
-        <li>
+          <div className="backFlutante02">
+  
+            <div className="back-content1Flutante02">
+               
+            <ul className=''>
 
-            <p>
+              <li className='intemCardFlutante02'>
 
-                Portugues
+                  <p>
 
-            </p>
+                    Portugues
 
-            <button className='botaoPais'></button>
+                  </p>
 
-        </li>
+                  <button className='botaoPais'></button>
 
-        <li>
+              </li>
 
-            <p>
- 
-                ingles
+              <li className='intemCardFlutante02'>
 
-            </p>
+                  <p>
 
-            <button className='botaoPais02'></button>
+                    Ingles
 
-        </li>
+                  </p>
 
-        </ul>
+                  <button className='botaoPais02'></button>
+
+              </li>
+
+              </ul>
+
+            </div>
           </div>
         </div>
-        <div className="front">
-          <ul className="cardFlutante02">
-            <li>
-              <p>Português</p>
-              <button className="botaoPais"></button>
-            </li>
-            <li>
-              <p>Inglês</p>
-              <button className="botaoPais02"></button>
-            </li>
-          </ul>
-        </div>
       </div>
-    </div>
+   
   );
 };
  

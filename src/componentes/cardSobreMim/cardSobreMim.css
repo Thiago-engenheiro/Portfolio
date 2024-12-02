@@ -1,19 +1,9 @@
 .CardSobreMim {
 
-  background: linear-gradient(to  right, 
-
-        var(--cor-barraLateral-01-ModoEscuro), 
-        var(--cor-barraLateral-02-ModoEscuro), 
-        var(--cor-barraLateral-03-ModoEscuro)
-
-    );
-
-    background-size: 100% 300%;
-    animation: mover-gradient 5s infinite linear;
-
+  background: #D8C9C7;
   margin: 20px 0px 0px 0px;
   height: 500px;
-  width: 600px;
+  width: 900px;
   border-radius: 24px;
   padding: 20px;
 
@@ -30,17 +20,25 @@
 .titulo__engenheiro {
 
   font-family: var(--fonte-quitenaria);
-  font-size: 36px;
+  font-size: 55px;
   text-transform: uppercase;
   margin: 50px 0px 0px 0px;
   font-weight: bold;
 
 }
 
+.subtitulo__engenheiro {
+
+  font-family: var(--fonte-quitenaria);
+  font-size: 50px;
+  text-transform: uppercase;
+
+}
+
 .frase__auxiliar {
 
   font-family: var(--fonte-secundaria);
-  font-size: 25px;
+  font-size: 35px;
   text-transform: uppercase;
   margin: 10px 0px 0px 0px;
 
@@ -49,9 +47,9 @@
 .subtitulo {
 
   font-family: var(--fonte-quitenaria);
-  font-size: 18px;
+  font-size: 25px;
   text-transform: uppercase;
-  margin: 150px 0px 0px 0px;
+  margin: 40px 0px 0px 0px;
 
 }
 
@@ -60,39 +58,32 @@
   display: flex;
   align-items: center;
   position: relative;
-  background: linear-gradient(to  right, 
-
-        #d8c4bb, 
-        var(--cor-barraLateral-02-ModoEscuro), 
-        var(--cor-barraLateral-03-ModoEscuro)
-
-    );
-
-    background-size: 100% 300%;
-    animation: mover-gradient 5s infinite linear;
-    border-radius: 24px 24px 0 0;
-    padding: 20px;
-    top: -525px;
-    left: 230px;
-    justify-content: end;
-    gap: 15%;
-    width: 350px;
+  background: #D8C9C7;
+  border-radius: 24px 24px 0 0;
+  padding: 20px;
+  top: -546px;
+  left: 370px;
+  justify-content: end;
+  gap: 15%;
+  width: 510px;
 
 }
 
 .CardSobreMim__direto__titulo {
 
   font-size: var(--fonte-secundaria);
-  font-size: 35px;
+  font-size: 50px;
 
 }
 
 .Seta {
 
   filter: invert(1);
-  width: 60px;
+  width: 80px;
   transition: border-color 0.3s ease;
-  border: 3px solid transparent;
+  height: 80px;
+  transition: border-color 0.3s ease, transform 0.3s ease; 
+  border: 4px solid transparent;
   border-radius: 50%;
   cursor: pointer;
  
@@ -100,7 +91,7 @@
 
 .Seta:hover {
 
-  
+  transform: scale(1.1);
   animation: rainbow-border 5s infinite linear;
 
 }
