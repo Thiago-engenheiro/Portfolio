@@ -3,8 +3,8 @@
   animation: mover-gradient 5s infinite linear;
   padding: 1rem 2rem;
   border-radius: 1.25rem;
-  top: 423px;
-  left: 390px;
+  top: 398px;
+  left: 274px;
   width: 1000px;
   position: absolute;
 
@@ -15,7 +15,7 @@
     color: black;
     font-family: var(--fonte-secundaria);
     font-weight: 500;
-    font-size: 35px;
+    font-size: 20px;
     -webkit-box-sizing: content-box;
     box-sizing: content-box;
     height: 40px;

@@ -146,6 +146,12 @@ export function BarraLateral () {
 
                 </ul>
 
+                <p className='nomeDaPagina'> 
+                    
+                    HOME
+
+                </p>
+
             </nav>
 
         </aside>

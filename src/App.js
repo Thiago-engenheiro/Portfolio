@@ -1,6 +1,9 @@
 import './App.css'
 import BarraLateral from './componentes/barraLateral';
+import Blog from './componentes/Blog';
+import CardMusica from './componentes/cardMusic';
 import CardSobreMim from './componentes/cardSobreMim';
+import Certificados from './componentes/Certificados';
 import Foto from './componentes/foto';
 import CardPortfolio from './componentes/portfolio';
 import Titulo from './componentes/Titulo';
@@ -25,6 +28,12 @@ function App() {
           <Foto></Foto>
 
           <CardPortfolio></CardPortfolio>
+
+          <Certificados></Certificados>
+
+          <CardMusica></CardMusica>
+
+          <Blog></Blog>
     
           </section>
 

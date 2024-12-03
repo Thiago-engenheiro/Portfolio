@@ -1,41 +1,51 @@
 .CardPortfolio {
 
   background: #020202;
-  margin: -30px 0px 0px 0px;
-  height: 750px;
-  width: 1045px;
+  margin: -30px 400px 0px 0px;
+  height: 800px;
+  width: 500px;
   border-radius: 24px;
   padding: 20px;
   color: white;
   position: relative;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5),
+    -1px -1px 6px 0 rgba(2, 2, 2, 1),
+    inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2),
+    inset 4px 4px 6px 0 rgba(2, 2, 2, 1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Borda inferior */
+  letter-spacing: 1px;
+ 
 
 }
+
+
 
 .cardPortfolio__cima__apresentacao {
 
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 0px 50px;
+    gap: 15%;
 }
 
 .CardPortfolio__cima__titulo {
 
     font-size: var(--fonte-secundaria);
-    font-size: 50px;
+    font-size: 35px;
 
 }
 
 .SetaCorInvertida {
 
-    width: 120px;
-    height: 120px;
+    width: 80px;
+    height: 80px;
     transition: border-color 0.3s ease, transform 0.3s ease; 
     border: 4px solid transparent;
     border-radius: 50%;
     cursor: pointer;
     background-color: transparent; 
-
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .SetaCorInvertida:hover {
@@ -60,8 +70,8 @@
 
 .Celular {
 
-    width: 650px;
-    height: 650px;
+    width: 450px;
+    height: 450px;
 
 }
 
@@ -69,19 +79,28 @@
 
     background: #020202;
     margin: -30px 0px 0px 0px;
-    height: 400px;
-    width: 1210px;
+    height: 300px;
+    width: 665px;
     border-radius: 24px;
     padding: 20px;
-    top: 475px;
-    right: 185px;
+    top: 505px;
+    right: 184px;
     display: flex;
     align-items: center;
     gap: 40px;
     z-index: 2;
     position: relative;
+    border-radius: 10px 0px 10px 10px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5),
+      -1px -1px 6px 0 rgba(2, 2, 2, 1),
+      inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2),
+      inset 4px 4px 6px 0 rgba(2, 2, 2, 1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Borda inferior */
+    letter-spacing: 1px;
+
 
 }
+
 
 .continerTablet {
 
@@ -95,19 +114,19 @@
   
     z-index: 10;
     position: absolute;
-    left: 400px;
+    left: 210px;
 
 }
 
 .Tablet {
 
-    width: 300px;
+    width: 220px;
    
 }
 
 .Notebook{
 
-    width: 600px;
+    width: 450px;
 
   
 

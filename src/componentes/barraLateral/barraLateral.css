@@ -19,6 +19,8 @@
     border: 3px solid transparent;
     border-width: 0px 2px 0px 0px;
     animation: rainbow-border2 5s infinite linear;
+
+    
     
 }
 
@@ -149,6 +151,18 @@
 
 .lista:hover .linkativo .icone {
   filter: invert(1);
+}
+
+.nomeDaPagina {
+
+  transform: rotate(270deg);
+  color: white; 
+  font-size: var(--fonte-secundaria);
+  font-size: 35px;
+  margin: 100px 0px 0px 0px ;
+  letter-spacing: 7px;
+  
+
 }
 
 @keyframes pulsar {

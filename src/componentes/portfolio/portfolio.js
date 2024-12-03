@@ -12,7 +12,7 @@ export function CardPortfolio() {
 
                 <h2 className='CardPortfolio__cima__titulo'>
 
-                    PORTFOLIO
+                    PROJETOS
 
                 </h2>
 
