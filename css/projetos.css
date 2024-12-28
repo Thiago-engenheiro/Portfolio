@@ -1,0 +1,176 @@
+.continerDeFiltros {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 20px;
+  justify-content: center;
+}
+
+.continerOFiltro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.CaixaFiltro {
+  padding: 10px;
+  width: 280px;
+  background: black;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.meusProjetos {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin: 50px 0px 0px 0px;
+}
+
+.ConteudoProjeto {
+  width: 100%;
+}
+
+.Primeiro__Rascunho__do__Portfólio {
+  background-image: url("/Arquivos/imagens/Projetos/Meu__primeiro__portifolio-escuro.png");
+}
+
+.continerImagemDoProjeto {
+  background: white;
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+  width: calc(100% - 40px);
+  height: 300px;
+  border-radius: 16px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.Primeiro__Rascunho__do__Portfólio {
+  position: relative;
+}
+
+.Primeiro__Rascunho__do__Portfólio::before {
+  content: ""; /* Necessário para criar o pseudo-elemento */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("/Arquivos/imagens/Projetos/Meu__primeiro__portifolio-escuro.png");
+  background-size: cover; /* Faz a imagem cobrir todo o fundo */
+  background-position: center; /* Centraliza a imagem */
+  opacity: 0.6; /* Altere a opacidade para o valor desejado */
+  z-index: -1; /* Coloca o pseudo-elemento atrás do conteúdo */
+}
+
+.botaoVerProjeto {
+  font-family: inherit;
+  font-size: 20px;
+  background: black;
+  color: white;
+  padding: 0.7em 1em;
+  padding-left: 0.9em;
+  display: flex;
+  align-items: center;
+  border: none;
+  overflow: hidden;
+  transition: all 0.2s;
+  cursor: pointer;
+  height: 60px;
+  padding: 20px;
+  border-bottom-right-radius: 16px;
+  position: absolute;
+  bottom: 0%;
+  right: 0%;
+  box-shadow: 4px 4px 6px 0 rgba(0, 0, 0, 0.5),
+    /* Sombra externa escura */ -4px -4px 6px 0 rgba(50, 50, 50, 0.5),
+    /* Sombra externa clara */ inset -4px -4px 6px 0 rgba(0, 0, 0, 0.6),
+    /* Sombra interna escura */ inset 4px 4px 6px 0 rgba(255, 255, 255, 0.2); /* Sombra interna clara */
+}
+
+button span {
+  display: block;
+  margin-left: 0.3em;
+  transition: all 0.3s ease-in-out;
+}
+
+button img {
+  display: block;
+  transform-origin: center center;
+  transition: transform 0.3s ease-in-out;
+  margin: 3px 0px 0px 0px;
+}
+
+button:hover .img-wrapper {
+  animation: fly-1 0.6s ease-in-out infinite alternate;
+}
+
+button:hover img {
+  transform: translateX(2em) rotate(45deg) scale(1.1);
+}
+
+button:hover span {
+  transform: translateX(6em);
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+@keyframes fly-1 {
+  from {
+    transform: translateY(0.1em);
+  }
+
+  to {
+    transform: translateY(-0.1em);
+  }
+}
+
+.categoria {
+  width: auto;
+  height: 30px;
+  padding: 5px 20px;
+  border-radius: 25px;
+  text-align: center;
+}
+
+.Figma {
+  background: blueviolet;
+}
+
+.tagsProjeto {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px 0px;
+}
+
+.tag {
+  display: inline-block;
+  background-color: #333;
+  color: #d3d3d3;
+  padding: 8px 16px;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 5px;
+}
+
+.TituloProjeto {
+  font-size: 35px;
+}
+
+dialog {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}

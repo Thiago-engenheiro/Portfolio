@@ -1,0 +1,387 @@
+.SecaoContato02 {
+  display: none;
+}
+
+.cardSemOFlip {
+  display: none;
+}
+
+@media (max-width: 1850px) {
+  .button {
+    font-size: 80px;
+  }
+
+  .Subtitulo {
+    font-size: 30px;
+  }
+
+  .Subtitulo01 {
+    font-size: 40px;
+  }
+
+  .Subtitulo02 {
+    font-size: 30px;
+  }
+
+  .textoAnimado {
+    font-size: 25px;
+  }
+
+  .loader {
+    font-size: 30px;
+  }
+
+  .contact-link {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 1600px) {
+  .SecaoContato {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    align-items: center;
+  }
+
+  .continerSecaoContato {
+    width: 250px;
+  }
+}
+
+@media (max-width: 1450px) {
+  .button {
+    font-size: 58px;
+    white-space: nowrap;
+  }
+
+  .Subtitulo {
+    font-size: 20px;
+  }
+
+  .Subtitulo01 {
+    font-size: 30px;
+  }
+
+  .Subtitulo02 {
+    font-size: 20px;
+  }
+
+  .textoAnimado {
+    font-size: 15px;
+  }
+
+  .loader {
+    font-size: 20px;
+  }
+
+  .textoLinkApresentacao {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .body {
+    width: 100vw;
+    height: 100vw;
+  }
+
+  .pagina {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 40px;
+  }
+
+  .pagina__apresentacao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .tituloDaPagina {
+    padding: 40px;
+    width: 85vw;
+    text-align: center;
+  }
+
+  .textoAnimado {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .textos {
+    margin: 50px 0px 0px 0px;
+  }
+
+  .loader {
+    margin: 5% 32%;
+    width: 300px;
+  }
+
+  .button {
+    font-size: 9.8vw;
+    margin: 0px 0px 40px 0px;
+    white-space: normal;
+  }
+
+  .Subtitulo {
+    font-size: 3vw;
+  }
+
+  .Subtitulo01 {
+    font-size: 3vw;
+  }
+
+  .Subtitulo02 {
+    font-size: 3vw;
+  }
+
+  .textoAnimado {
+    font-size: 3vw;
+  }
+
+  .card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .loader {
+    font-size: 3vw;
+    margin: 10px 0px;
+    padding: 0px;
+    width: auto;
+  }
+
+  .textoLinkApresentacao {
+    font-size: 30px;
+  }
+
+  .ListaLinkApresentacao {
+    position: fixed;
+    bottom: 0%;
+    flex-direction: row;
+    background: white;
+    width: 85vw;
+    padding: 20px 40px;
+    justify-content: space-between;
+    backdrop-filter: blur(10px); /* Aplica o desfoque no fundo */
+    -webkit-backdrop-filter: blur(
+      10px
+    ); /* Para compatibilidade com navegadores baseados em WebKit */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Bordas para dar efeito de vidro */
+    z-index: 9999;
+  }
+
+  .textoLinkApresentacao {
+    color: #1e1e1e;
+    font-size: 2vw;
+  }
+
+  .SecaoContato {
+    display: none;
+  }
+
+  .continerCard {
+    width: 85vw;
+    height: 100%;
+    margin: 9.5vh 0px 0px 0px;
+  }
+
+  .conteudoCard {
+    overflow-y: hidden;
+    scrollbar-width: none;
+  }
+
+  .links {
+    gap: 40px;
+  }
+
+  .SecaoContato02 {
+    display: flex;
+    margin: 50px 0px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px 0px;
+  }
+
+  .continerImagemDoProjeto {
+    height: 55vw;
+  }
+
+  .CaixaFiltro {
+    width: 40vw;
+  }
+}
+
+@media (max-width: 700px) {
+  .continerCard {
+    width: 80vw;
+  }
+
+  .tituloDaPagina {
+    width: 80vw;
+  }
+
+  .ListaLinkApresentacao {
+    width: 80vw;
+  }
+
+  .textoLinkApresentacao {
+    font-size: 1.5vw;
+  }
+
+  .links {
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+  }
+
+  .continerImagemDoProjeto {
+    height: 50vw;
+  }
+
+  .CaixaFiltro {
+    width: 35vw;
+  }
+}
+
+@media (max-width: 700px) {
+  .continerCard {
+    width: 75vw;
+    padding: 20px 40px;
+  }
+
+  .tituloDaPagina {
+    width: 75vw;
+  }
+
+  .ListaLinkApresentacao {
+    width: 75vw;
+  }
+
+  .button {
+    font-size: 14vw;
+    margin: 0px 0px 40px 0px;
+  }
+
+  .Subtitulo {
+    font-size: 4.5vw;
+  }
+
+  .Subtitulo01 {
+    font-size: 4.5vw;
+  }
+
+  .Subtitulo02 {
+    font-size: 4.5vw;
+  }
+
+  .textoAnimado {
+    font-size: 4.5vw;
+  }
+
+  .loader {
+    font-size: 4.5vw;
+  }
+
+  .continerMinhaFoto {
+    width: auto;
+    height: auto;
+    box-shadow: 0 4px 10px white;
+  }
+
+  .flip-card {
+    display: none;
+  }
+
+  .flip-card2 {
+    display: none;
+  }
+
+  .cardSemOFlip {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .continertLugarCatolica {
+    width: 100%;
+    margin: 20px 0px 0px 0px;
+  }
+
+  .LugarImagem {
+    width: 100%;
+    border-radius: 16px;
+  }
+
+  .tituloDoLugar {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .SecaoContato02 {
+    margin: 50px 0px 125px 0px;
+  }
+
+  .ListaLinkApresentacao {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px 40px;
+  }
+
+  .continerTextoLinkApresentacao {
+    width: 100px;
+  }
+
+  .textoLinkApresentacao {
+    font-size: 3vw;
+  }
+
+  .continerTituloExpandir {
+    font-size: 18px;
+  }
+
+  .conteudoCard {
+    font-size: 16px;
+  }
+
+  .continerImagemDoProjeto {
+    height: 45vw;
+  }
+
+  .CaixaFiltro {
+    width: 30vw;
+  }
+}
+
+@media (max-width: 400px) {
+  .continerCard {
+    width: 70vw;
+  }
+
+  .tituloDaPagina {
+    width: 70vw;
+  }
+
+  .ListaLinkApresentacao {
+    width: 70vw;
+  }
+
+  .CaixaFiltro {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 340px) {
+  .ListaLinkApresentacao {
+    gap: 20px 20px;
+  }
+}

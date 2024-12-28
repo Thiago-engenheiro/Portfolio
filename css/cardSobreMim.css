@@ -1,0 +1,195 @@
+.continerMinhaFoto {
+
+  width: 500px;
+  height: 600px;
+  margin: 50px auto;
+  box-shadow: 0 4px 30px white; 
+  position: relative;
+
+}
+
+.MinhaFoto {
+
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}
+
+.shine {
+  
+	position: relative;
+	overflow: hidden;
+
+	&::before {
+		background: linear-gradient(
+			to right,
+			fade_out(#fff, 1) 0%,
+			fade_out(#fff, 0.7) 100%
+		);
+		content: "";
+		display: block;
+		height: 100%;
+		left: -75%;
+		position: absolute;
+		top: 0;
+		transform: skewX(-25deg);
+		width: 50%;
+		z-index: 2;
+    animation: shine 0.85s;
+	}
+
+	&:hover,
+	&:focus {
+		&::before {
+			animation: shine 0.85s;
+		}
+	}
+
+	@keyframes shine {
+		100% {
+			left: 125%;
+		}
+	}
+}
+
+.shine::before {
+  position: absolute;
+  top: 0;
+  left: -75%;
+  z-index: 2;
+  display: block;
+  content: '';
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+  transform: skewX(-25deg);
+  animation: shine 2s  infinite;
+
+}
+
+@keyframes shine {
+  0% {
+      left: -75%;
+  }
+  100% {
+      left: 125%;
+  }
+}
+
+.textoSobreMim {
+
+  font-size: var(--fs6);
+   
+    font-size: 20px;
+    font-weight: var(--fw400);
+    line-height: 1.6;
+
+}
+
+.margem {
+
+  margin: 30px 0px;
+
+}
+
+.cardsExpandir {
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+}
+
+.continerExpandir {
+
+  box-shadow: var(--bg) -0.5cqi 0.5cqi 2.5cqi inset;
+  border: 1px solid white;
+  padding: 20px;
+  cursor: pointer;
+  
+
+}
+
+
+.continerTituloExpandir {
+
+  font-size: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.linhaDecorativa {
+
+  width: 100%;
+  height: 2px;
+  background: white;
+  margin: 30px 0px;
+
+}
+
+.continerExpandir:hover {
+  box-shadow: 7px 5px 56px -14px #ffffff;
+ }
+ 
+ .continerExpandir:active {
+  transform: scale(0.97);
+  box-shadow: 7px 5px 56px -10px #ffffff;
+ }
+
+ details[open] .continerTituloExpandir img {
+  content: url('/Arquivos/imagens/menod.png'); /* Caminho para a nova imagem */
+
+}
+
+
+.continerMusicas {
+
+  background: #eef3f7;;
+  width: calc(100% -40px);
+  height: 400px;
+  color: #a3b4ce;
+  box-shadow: 0px 15px 35px -5px rgba(50, 88, 130, 0.32);
+  border-radius: 15px;
+  padding: 30px;
+
+}
+
+.continerImagemDaMusica {
+
+  width: 80%;
+  height: 60%;
+  margin: auto;
+ 
+}
+
+.musicaImg {
+
+  border-radius: 14px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}
+
+.BotoesCardMusica {
+
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 20PX 0px;
+  gap: 20px;
+  align-items: center;
+
+}
+
+.botaoMusica {
+
+  background: transparent;
+  border: none;
+  width: 75px;
+
+}
+

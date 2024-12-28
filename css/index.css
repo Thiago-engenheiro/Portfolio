@@ -1,0 +1,154 @@
+body {
+
+  background: hsl(0 0% 6%);
+  color: white;
+  font-weight: 500;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: var(--fonte01);
+  box-sizing: border-box;
+  mix-blend-mode: difference;
+  
+}
+
+.pagina {
+
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  
+
+}
+
+.pagina__apresentacao {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+
+}
+
+.ListaLinkApresentacao {
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+}
+
+.textoLinkApresentacao {
+
+  text-decoration: none;
+  color: white;
+  font-size: 40px;
+  font-family: var(--fonte02);
+  font-weight: 500;
+  text-transform: uppercase;
+
+}
+
+.textoLinkApresentacao:hover {
+
+ color: gray;
+
+}
+
+.SecaoContato {
+
+  display: flex;
+  align-items: center;
+  gap: 30px;
+
+}
+
+.continerIcone {
+ 
+  position: relative;
+  background: var(--border-gradient-onyx);
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  color: var(--orange-yellow-crayola);
+  box-shadow: var(--shadow1);
+  z-index: 1;
+
+
+}
+
+.icon-box::before {
+  content: '';
+  position: absolute;
+  inset: 1px;
+  background: var(--eerie-black1);
+  border-radius: inherit;
+  z-index: -1;
+}
+
+
+.continerSecaoContato {
+
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+}
+
+.SecaoContato__titulo {
+
+  color: gray;
+
+}
+
+.contact-link  {
+  background-image: linear-gradient(
+    to right,
+    #54b3d6,
+    #54b3d6 50%,
+    white 50%
+  );
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+  font-size: 20px;
+  
+}
+
+.contact-link:before{
+  content: '';
+  background: #54b3d6;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact-link:hover {
+ background-position: 0;
+}
+
+.contact-link:hover::before{
+  width: 100%;
+}
+
+.hidden {
+  display: none;
+}
+
+.textoLinkApresentacao.active {
+  color: gray; /* Define a cor cinza para o link ativo */
+}
+
