@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="./css/cardSobreMim.css">
     <link rel="stylesheet" href="./css/cardCarreira.css">
     <link rel="stylesheet" href="./css/projetos.css">
+    <link rel="stylesheet" href="./css/caixaDialogo.css">
     <link rel="stylesheet" href="./css/resposividade.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 
@@ -189,9 +190,9 @@
 
                         <div>
 
-                            <h5 class="SecaoContato__titulo">PDF</h5>
+                            <h5 class="SecaoContato__titulo">CANVA</h5>
 
-                            <a  href="https://www.canva.com/design/DAGXm9wo_r4/-yGSvUtqewqypJ5IWnCGpg/view?utm_content=DAGXm9wo_r4&utm_campaign=designshare&utm_medium=link&utm_source=editor" target="_blank" class="contact-link">Currículo.PDF</a>
+                            <a  href="https://www.canva.com/design/DAGXm9wo_r4/-yGSvUtqewqypJ5IWnCGpg/view?utm_content=DAGXm9wo_r4&utm_campaign=designshare&utm_medium=link&utm_source=editor" target="_blank" class="contact-link">Currículo.canva</a>
 
                         </div>
 
@@ -828,10 +829,10 @@
                                 <div class="continerImagemDoProjeto">
 
                                     <p class=" categoria Figma">Figma</p>
-                                    <button class="botaoVerProjeto" data-dialog="dialog1">
+                                    <button class="botaoVerProjeto buttonVerMais" data-dialog="dialog1">
                                         <div class="img-wrapper-1">
                                           <div class="img-wrapper">
-                                            <img src="./Arquivos/imagens/seta.png" alt="IconeEmail" width="15">
+                                            <img src="./Arquivos/imagens/seta.png" alt="IconeSeta" width="15">
                                           </div>
                                         </div>
                                         <span>Ver mais</span>
@@ -839,8 +840,12 @@
 
                                     <dialog id="dialog1">
 
-                                        <p>teste</p>
-                                        <button class="fecharVerMaisProjeto">Fechar</button>
+                                        <div class="continerApresentacaoDoProjeto">
+                                            <button class="fecharVerMaisProjeto">
+                                                <img class="SetaVolta" src="./Arquivos/imagens/seta.png" alt="" width="15">
+                                                Voltar
+                                            </button>
+                                        </div>
 
                                     </dialog>
 
@@ -866,7 +871,7 @@
                                 <div class="continerImagemDoProjeto Primeiro__Rascunho__do__Portfólio">
 
                                     <p class=" categoria Figma">Figma</p>
-                                    <button class="botaoVerProjeto"  data-dialog="dialog2">
+                                    <button class="botaoVerProjeto buttonVerMais"  data-dialog="dialog2">
                                         <div class="img-wrapper-1">
                                           <div class="img-wrapper">
                                             <img src="./Arquivos/imagens/seta.png" alt="IconeEmail" width="15">
@@ -877,9 +882,29 @@
 
                                     <dialog id="dialog2">
                                        
+                                        <div class="continerApresentacaoDoProjeto">
 
-                                        <p>teste 2</p>
-                                        <button class="fecharVerMaisProjeto">Fechar</button>
+                                                <div class="continerNomeDOprojetoAberto">
+                                                    
+
+                                                    <button class="buttonNomeProjeto" data-text="Awesome">
+                                                        <span aria-hidden="true" class="front-text"><mark>Rascunho portifolio</mark></span>
+                                                    </button>
+                                                    
+                                                </div>
+
+                                                <div class="continerFechar">
+
+                                                    <button class="fecharVerMaisProjeto">
+                                                        <img class="X" src="./Arquivos/imagens/fechar.png" width="40">
+                                                    </button>
+
+                                                </div>
+
+                                                <img class="imagemProjeto" src="./Arquivos/imagens/Projetos/Meu__primeiro__portifolio-escuro.png">
+                                        
+
+                                        </div>
 
                                     </dialog>
                                       
