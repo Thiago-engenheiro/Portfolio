@@ -1,4 +1,5 @@
 dialog {
+
   width: calc(85% - 40px);
   height: calc(90% - 145px);
   background-color: #222; /* Fundo bem escuro */
@@ -14,6 +15,7 @@ dialog {
   background-origin: border-box;
   background-clip: content-box, border-box;
   padding: 125px 20px 20px 20px;
+  z-index: 11;
 }
 
 .continerApresentacaoDoProjeto {
@@ -76,7 +78,7 @@ dialog {
   background: transparent;
   --stroke-color: black;
   --ani-color: rgba(95, 3, 244, 0);
-  --color-gar: linear-gradient(90deg, #f0f0f0, #cfcfcf, #f0f0f0, #cfcfcf); /* Gradiente em tons de cinza */
+  --color-gar: linear-gradient(90deg, #ffffff9e, #f0f0f0, #ffffff9e, #f0f0f0, #ffffff9e); /* Gradiente em tons de cinza */
   font-size: 40px;
   font-family: var(--fonte03);
   text-transform: uppercase;
@@ -173,7 +175,6 @@ dialog {
 
 .imagemPequenaProjeto {
 
-  cursor: pointer;
   width: 100%;
 
 }
@@ -210,7 +211,7 @@ dialog {
 
   display: flex;
   justify-content: space-between;
-  margin: 0px 0px 100px 0px;
+  margin: 0px 0px 50px 0px;
 
 }
 

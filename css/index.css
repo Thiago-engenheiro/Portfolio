@@ -152,3 +152,65 @@ body {
   color: gray; /* Define a cor cinza para o link ativo */
 }
 
+::-webkit-scrollbar {
+  width: 10px; /* Largura da barra vertical */
+  height: 10px; /* Altura da barra horizontal */
+}
+
+/* Fundo da barra de rolagem */
+::-webkit-scrollbar-track {
+  background: #f0f0f0;
+  border-radius: 10px;
+}
+
+/* Cor do polegar (a parte que você arrasta) */
+::-webkit-scrollbar-thumb {
+  background: #888888;
+  border-radius: 10px;
+}
+
+/* Cor do polegar quando está sendo clicado/arrastado */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f0f0f0;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Estilo base da página */
+.todoConteudo {
+  position: relative;
+  transition: filter 1s ease;
+}
+
+/* Adiciona um pseudo-elemento para o efeito de blur */
+.todoConteudo.blur::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(5px); /* Aplica o desfoque */
+  background: rgba(0, 0, 0, 0.2); /* Fundo semitransparente */
+  z-index: 10; /* Camada acima do conteúdo mas abaixo do card */
+  
+  
+}
+

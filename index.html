@@ -23,13 +23,13 @@
 
 <body>
    
-    <main>
+    <main class="todoConteudo" id="main">
 
         <div class="paginaDeCarregamento"></div>
 
         <div class="el"></div>
 
-        <div class="pagina" id="Page">
+        <div class="pagina">
 
             <div class="pagina__apresentacao">
 
@@ -915,7 +915,7 @@
                                                     
 
                                                     <button class="buttonNomeProjeto" data-text="Awesome">
-                                                        <span aria-hidden="true" class="front-text"><mark>Modelo Portfólio 01</mark></span>
+                                                        <span aria-hidden="true" class="front-text"><mark>Cardsfolio</mark></span>
                                                     </button>
                                                     
                                                 </div>
@@ -934,27 +934,27 @@
 
                                                     <div class="continerDaImagemPrincipalDoProjeto">
 
-                                                        <img class="imagemProjeto" src="./Arquivos/imagens/Projetos/Meu__primeiro__portifolio-escuro.png">
+                                                        <img class="imagemProjeto" src="./Arquivos/imagens/Projetos/cardFolio black.png">
 
                                                     </div>
 
                                                     <div class="continerMaisImagensDoProjeto">
 
-                                                        <button class="BotaoMudarImagemPrincipal">
+                                                        <button class="BotaoMudarImagemPrincipal primeiro">
 
-                                                            <img class="imagemPequenaProjeto" src="">
-
-                                                        </button>
-
-                                                        <button class="BotaoMudarImagemPrincipal">
-
-                                                            <img class="imagemPequenaProjeto" src="">
+                                                            <img class="imagemPequenaProjeto" src="./Arquivos/imagens/Projetos/cardFolio Branco.png">
 
                                                         </button>
 
-                                                        <button class="BotaoMudarImagemPrincipal">
+                                                        <button class="BotaoMudarImagemPrincipal secundo">
 
-                                                            <img class="imagemPequenaProjeto" src="">
+                                                            <img class="imagemPequenaProjeto" src="./Arquivos/imagens/Projetos/cardFolio Branco.png">
+
+                                                        </button>
+
+                                                        <button class="BotaoMudarImagemPrincipal terceiro">
+
+                                                            <img class="imagemPequenaProjeto" src="./Arquivos/imagens/Projetos/cardFolio Branco.png">
 
                                                         </button>
 
@@ -984,14 +984,14 @@
 
                                                         <div class="continerIcone">
                         
-                                                            <img src="" alt="Icone" width="30">
+                                                            <img  src="./Arquivos/imagens/figma-svgrepo-com.svg" alt="Icone" width="30">
                                     
                                                         </div>
                                     
                                                         <div>
                                     
                                                             <h5 class="SecaoContato__titulo">FIGMA</h5>
-                                                            <a href="" class="contact-link">Link.FIGMA</a>
+                                                            <a href="https://www.figma.com/proto/TWpNbHIPWfAsAp1qZWRUyy/Portif%C3%B3lio-pessoal?page-id=0%3A1&node-id=3011-13&p=f&viewport=610%2C57%2C0.69&t=rLNDPhF9UZPTrj1A-1&scaling=min-zoom&content-scaling=fixed" target="_blank" class="contact-link">Link.FIGMA</a>
                                     
                                                         </div>
 
@@ -1029,7 +1029,7 @@
 
                                 </div>
 
-                                <h3 class="TituloProjeto"> Modelo Portfólio 01</h3>
+                                <h3 class="TituloProjeto">Cardsfolio</h3>
                                 <p class="timeline-text">
                                     Este foi o protótipo inicial do meu portfólio, concebido com a ideia principal de "concentrar tudo o que um recrutador precisa em uma única página". No entanto, percebi que esse design entrava em conflito com a usabilidade e simplicidade que eu buscava. Em dispositivos menores, a navegação se tornou problemática, e o excesso de conteúdo acabou prejudicando o impacto inicial desejado. Apesar disso, acredito que esse formato possa ser uma abordagem interessante para o desenvolvimento de um dashboard financeiro no futuro.
                                 </p>
@@ -1063,7 +1063,7 @@
                     <div>
 
                         <h5 class="SecaoContato__titulo">EMAIL</h5>
-                        <a href="mailto:thiago.principal11@outlook.com.br" class="contact-link">thiago.principal11@outlook.com.br</a>
+                        <a href="mailto:thiago.principal11@outlook.com.br" target="_blank" class="contact-link">thiago.principal11@outlook.com.br</a>
 
                     </div>
 
@@ -1187,6 +1187,7 @@
 
         const abrirDialogs = document.querySelectorAll('.botaoVerProjeto');
         const fecharDialogs = document.querySelectorAll('.fecharVerMaisProjeto');
+        const pagina = document.getElementById('main');
 
         abrirDialogs.forEach((botao) => {
 
@@ -1196,6 +1197,7 @@
 
             if (dialog) {
                 dialog.showModal(); 
+                pagina.classList.add('blur');
             }
 
             });
@@ -1209,6 +1211,7 @@
 
             if (dialog) {
                 dialog.close(); 
+                pagina.classList.remove('blur');
             }
 
             });

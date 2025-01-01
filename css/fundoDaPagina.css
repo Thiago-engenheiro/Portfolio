@@ -20,6 +20,7 @@ body::before {
       url("https://assets.codepen.io/605876/noise-mask.png") 256px 50% / 256px 256px;
     mask-composite: intersect;
     animation: flicker 20s infinite linear;
+   
 }
 
 @keyframes flicker {
@@ -31,4 +32,12 @@ body::before {
 
 :root {
     --size: 20px;
+  }
+
+  #conteudo {
+    transition: filter 0.3s ease; /* Suaviza o efeito de blur */
+  }
+  
+  #conteudo.blur {
+    filter: blur(5px); /* Aplique o efeito de desfoque */
   }
