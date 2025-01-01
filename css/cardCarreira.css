@@ -62,7 +62,7 @@
     color: var(--light-gray);
     font-weight: var(--fw300);
     line-height: 1.6;
-    text-align: justify;
+    text-align: s;
 }
 
 .maisMargem {
