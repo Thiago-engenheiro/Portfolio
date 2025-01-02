@@ -121,19 +121,19 @@
     
 }
 
-.swiper-slide {
+.swiperEstilo {
 
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    gap: 20px !important;
-    background: #282829 !important;
-    border-radius: 16px !important;
-    padding: 15px !important;
-    width: 100px !important;
-    margin: 0PX 0PX 35px 0Px;
-    cursor: grab;
-   
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  gap: 20px !important;
+  background: #282829 !important;
+  border-radius: 16px !important;
+  padding: 15px !important;
+  width: 100px !important;
+  margin: 0PX 0PX 35px 0Px;
+  cursor: grab;
+
 }
 
 .swiper-pagination-bullet {
