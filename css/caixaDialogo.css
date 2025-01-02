@@ -49,6 +49,13 @@ dialog {
     }
 */
 
+.continerConteudoDeTodoOProjeto {
+
+  display: flex;
+  flex-direction: column;
+
+}
+
 .continerOpcoesProjeto {
   position: absolute;
   top: 0%;
