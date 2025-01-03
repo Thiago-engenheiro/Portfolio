@@ -327,10 +327,12 @@ document.addEventListener("DOMContentLoaded", () => {
   function filtrarCertificados() {
 
     const tipoSelecionado = filtroEspecialidade.value.toLowerCase();
+    console.log("Tipo Selecionado:", tipoSelecionado);
 
     certificados.forEach((certificado) => {
 
       const tipoEspecialidade = certificado.dataset.especialidade.toLowerCase();
+      console.log("Tipo Especialidade:", tipoEspecialidade);
 
       const correspondeEspecialidade = tipoSelecionado === "all" || tipoEspecialidade === tipoSelecionado;
 

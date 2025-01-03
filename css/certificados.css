@@ -3,6 +3,7 @@
     width: 100%;
     display: flex;
     flex-direction: column;
+    text-align: center;
      
   
 }
@@ -44,8 +45,8 @@
 .imgCertificado {
 
     flex-shrink: 0; /* Evita que os itens encolham */
-    min-width: 300px; /* Define uma largura mínima para os itens */
-    max-width: 500px; /* Limita o tamanho máximo */
+    width: 510px !important;
+    height: 375px !important;
     border: 1px solid #ccc; /* Apenas para visualização */
     padding: 10px; /* Espaçamento interno */
 }
@@ -53,8 +54,8 @@
 .swiper-slide2 {
 
    margin: 0px 20px 40px 0px !important;
-   width: 20vw !important;
-   height: 28vh !important;
+   width: 510px !important;
+   height: 375px !important;
    padding: 6px 14px 6px 14px;
    border: 1px solid #ccc;
    
@@ -69,8 +70,8 @@
 
 .imagemCertificado {
 
-    width: 20vw !important;
-    height: 28vh !important;
+    width: 510px !important;
+    height: 375px !important;
     object-fit: contain;
     cursor: grab !important;
     opacity: 0; /* Oculta a imagem (e o texto alternativo) inicialmente */

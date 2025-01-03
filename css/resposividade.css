@@ -220,53 +220,53 @@
   dialog {
     width: calc(95% - 40px);
     height: calc(85% - 40px);
-   
   }
 
   .continerMostraProjeto {
-
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 100%;
-    margin: 0px 0px 0px 0px
-
-    
+    margin: 0px 0px 0px 0px;
   }
 
   .continerDaImagemPrincipalDoProjeto {
-
-    width: calc(100%  - 120px);
-  
+    width: calc(100% - 120px);
   }
 
   .continerMaisImagensDoProjeto {
-
     flex-direction: row;
     justify-content: space-between;
-    
   }
 
   .imagemPequenaProjeto {
-
     width: 100%;
-  
   }
-  
-  .continerMaisImagensDoProjeto {
 
+  .continerMaisImagensDoProjeto {
     width: calc(100% - 120px);
     height: 600px;
     margin: 20px 10px 20px 20px;
-    
   }
 
   .continerInformacoesDoProjeto {
-
     margin: 0 30px;
-
   }
 
+  .imagemCertificado {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .imgCertificado {
+    width: 45% !important;
+    height: auto !important;
+  }
+
+  .swiper-slide2 {
+    width: 45% !important;
+    height: auto !important;
+  }
 }
 
 @media (max-width: 700px) {
@@ -302,52 +302,52 @@
   }
 
   .continerMaisImagensDoProjeto {
-
     flex-direction: column;
     justify-content: space-between;
     padding: 10px;
-    width: calc(100%  - 60px);
+    width: calc(100% - 60px);
     height: auto;
-    
   }
 
   .continerDaImagemPrincipalDoProjeto {
-
-    width: calc(100%  - 60px);
+    width: calc(100% - 60px);
     padding: 10px;
-  
   }
 
   .tituloEstudoDeCaso {
-
     font-size: 40px;
-
   }
-  
+}
+
+@media (max-width: 900px) {
+  .imagemCertificado {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .imgCertificado {
+    width: 75% !important;
+    height: auto !important;
+  }
+
+  .swiper-slide2 {
+    width: 75% !important;
+    height: auto !important;
+  }
 }
 
 @media (max-width: 1100px) {
-
   .continerNomeDOprojetoAberto {
-
     padding: 20px 125px;
-   
   }
 
   .X {
-
     width: 40px;
-
   }
 
   .buttonNomeProjeto {
-
-    
     font-size: 30px;
-  
-  
   }
-
 }
 
 @media (max-width: 700px) {
@@ -424,21 +424,15 @@
   }
 
   .continerNomeDOprojetoAberto {
-
     padding: 20px 75px;
-   
   }
 
   .X {
-
     width: 35px;
-
   }
 
   .buttonNomeProjeto {
-
     font-size: 20px;
-  
   }
 }
 
@@ -479,13 +473,23 @@
   }
 
   .continerNomeDOprojetoAberto {
-
     display: none;
-   
   }
 
-  
+  .imagemCertificado {
+    width: 100% !important;
+    height: auto !important;
+  }
 
+  .imgCertificado {
+    width: 90% !important;
+    height: auto !important;
+  }
+
+  .swiper-slide2 {
+    width: 90% !important;
+    height: auto !important;
+  }
 }
 
 @media (max-width: 400px) {
@@ -506,13 +510,10 @@
   }
 
   .X {
-
     width: 30px;
-
   }
 
   .fecharVerMaisProjeto {
-
     background: transparent;
     border: none;
     cursor: pointer;
@@ -520,6 +521,20 @@
     height: 30px;
   }
 
+  .imagemCertificado {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .imgCertificado {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .swiper-slide2 {
+    width: 100% !important;
+    height: auto !important;
+  }
 }
 
 @media (max-width: 340px) {
@@ -528,15 +543,25 @@
   }
 
   .X {
-
     width: 25px;
-
   }
 
   .continerFechar {
-
     width: 50px;
-    
   }
 
+  .imagemCertificado {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .imgCertificado {
+    width: 120% !important;
+    height: auto !important;
+  }
+
+  .swiper-slide2 {
+    width: 120% !important;
+    height: auto !important;
+  }
 }
