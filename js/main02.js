@@ -300,8 +300,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
       const correspondeTags = tagSelecionada === "all" || tagsProjeto.includes(tagSelecionada);
 
-      console.log(correspondeTipo , correspondeTags);
-
       if (correspondeTipo && correspondeTags) {
 
         projeto.style.display = "block";
@@ -318,6 +316,39 @@ document.addEventListener("DOMContentLoaded", () => {
 
   filtroTipo.addEventListener("change", filtrarProjetos);
   filtroTags.addEventListener("change", filtrarProjetos);
+
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+
+  const filtroEspecialidade = document.getElementById("filtroEspecialidade");
+  const certificados = document.querySelectorAll(".continerCategoriaCertificado");
+
+  function filtrarCertificados() {
+
+    const tipoSelecionado = filtroEspecialidade.value.toLowerCase();
+
+    certificados.forEach((certificado) => {
+
+      const tipoEspecialidade = certificado.dataset.especialidade.toLowerCase();
+
+      const correspondeEspecialidade = tipoSelecionado === "all" || tipoEspecialidade === tipoSelecionado;
+
+      if (correspondeEspecialidade) {
+
+        certificado.style.display = "block";
+
+      } else {
+
+        certificado.style.display = "none";
+
+      }
+
+    });
+  
+  }
+
+  filtroEspecialidade.addEventListener("change",  filtrarCertificados);
 
 });
 
