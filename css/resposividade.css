@@ -535,6 +535,25 @@
     width: 100% !important;
     height: auto !important;
   }
+
+  .categoria {
+
+    height: 25px;
+    font-size: 14px;
+
+  }
+
+    .botaoVerProjeto {
+
+    font-size: 15px;
+    }
+
+    .SetaVerMais {
+
+      width: 12px;
+
+    }
+
 }
 
 @media (max-width: 340px) {
