@@ -3,8 +3,8 @@
     width: 100%;
     display: flex;
     flex-direction: column;
+     
   
-
 }
 
 .CaixaFiltroCertificado {
@@ -51,18 +51,40 @@
 
 .swiper-slide2 {
 
-   margin: 0px 0px 40px 0px !important;
-   width: 100% !important;
-   display: flex !important;
-  
-    
-    
+   margin: 0px 20px 40px 0px !important;
+   width: 20vw !important;
+   height: 28vh !important;
+   padding: 6px 14px 6px 14px;
+   border: 1px solid #ccc;
+   
+}
+
+.carrossel__container {
+
+    position: relative; /* Para posicionar elementos relativos ao contêiner */
+    overflow: hidden;   /* Evita barras de rolagem inesperadas */
+
 }
 
 .imagemCertificado {
 
-    width: 100%;
+    width: 20vw !important;
+    height: 28vh !important;
     object-fit: contain;
     cursor: grab !important;
+    opacity: 0; /* Oculta a imagem (e o texto alternativo) inicialmente */
+    transition: opacity 0.5s ease-in-out; /* Transição suave para a opacidade */
+}
+
+
+.imagemCertificado.swiper-lazy-loaded {
+    opacity: 1; /* Mostra a imagem quando carregada */
+}
+
+.swiper-lazy-preloader {
+
+    width: 100%;
+    height: 100%;
 
 }
+

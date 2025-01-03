@@ -214,3 +214,7 @@ body {
   
 }
 
+.swiper-lazy-loaded ~ .swiper-lazy-preloader {
+  display: none !important;
+}
+
