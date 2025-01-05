@@ -73,6 +73,29 @@
   z-index: -1; /* Coloca o pseudo-elemento atrás do conteúdo */
 }
 
+.AtualProjeto {
+
+  position: relative;
+
+}
+
+.AtualProjeto::before {
+  
+  content: ""; /* Necessário para criar o pseudo-elemento */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("/Arquivos/imagens/Projetos/Projeto\ atual\ preto.png");
+  background-size: cover; /* Faz a imagem cobrir todo o fundo */
+  background-position: center; /* Centraliza a imagem */
+  opacity: 0.6; /* Altere a opacidade para o valor desejado */
+  z-index: -1; /* Coloca o pseudo-elemento atrás do conteúdo */
+}
+
+
+
 .botaoVerProjeto {
   font-family: inherit;
   font-size: 20px;
