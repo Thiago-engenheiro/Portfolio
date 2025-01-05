@@ -1,5 +1,4 @@
 body {
-
   background: hsl(0 0% 6%);
   color: white;
   font-weight: 500;
@@ -10,62 +9,46 @@ body {
   font-family: var(--fonte01);
   box-sizing: border-box;
   mix-blend-mode: difference;
-  
 }
 
 .pagina {
-
   display: flex;
   justify-content: space-between;
   padding: 40px;
-  
-
 }
 
 .pagina__apresentacao {
-
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
-
 }
 
 .ListaLinkApresentacao {
-
   display: flex;
   flex-direction: column;
   gap: 10px;
-
 }
 
 .textoLinkApresentacao {
-
   text-decoration: none;
   color: white;
   font-size: 40px;
   font-family: var(--fonte02);
   font-weight: 500;
   text-transform: uppercase;
-
 }
 
 .textoLinkApresentacao:hover {
-
- color: gray;
-
+  color: gray;
 }
 
 .SecaoContato {
-
   display: flex;
   align-items: center;
   gap: 30px;
-
 }
 
 .continerIcone {
- 
   position: relative;
   background: var(--border-gradient-onyx);
   width: 48px;
@@ -78,12 +61,10 @@ body {
   color: var(--orange-yellow-crayola);
   box-shadow: var(--shadow1);
   z-index: 1;
-
-
 }
 
 .icon-box::before {
-  content: '';
+  content: "";
   position: absolute;
   inset: 1px;
   background: var(--eerie-black1);
@@ -91,28 +72,18 @@ body {
   z-index: -1;
 }
 
-
 .continerSecaoContato {
-
   display: flex;
   align-items: center;
   gap: 5px;
-
 }
 
 .SecaoContato__titulo {
-
   color: gray;
-
 }
 
-.contact-link  {
-  background-image: linear-gradient(
-    to right,
-    #54b3d6,
-    #54b3d6 50%,
-    white 50%
-  );
+.contact-link {
+  background-image: linear-gradient(to right, #54b3d6, #54b3d6 50%, white 50%);
   background-size: 200% 100%;
   background-position: -100%;
   display: inline-block;
@@ -121,11 +92,10 @@ body {
   -webkit-text-fill-color: transparent;
   transition: all 0.3s ease-in-out;
   font-size: 20px;
-  
 }
 
-.contact-link:before{
-  content: '';
+.contact-link:before {
+  content: "";
   background: #54b3d6;
   display: block;
   position: absolute;
@@ -137,10 +107,10 @@ body {
 }
 
 .contact-link:hover {
- background-position: 0;
+  background-position: 0;
 }
 
-.contact-link:hover::before{
+.contact-link:hover::before {
   width: 100%;
 }
 
@@ -201,7 +171,7 @@ body {
 
 /* Adiciona um pseudo-elemento para o efeito de blur */
 .todoConteudo.blur::before {
-  content: '';
+  content: "";
   position: fixed;
   top: 0;
   left: 0;
@@ -210,11 +180,11 @@ body {
   backdrop-filter: blur(5px); /* Aplica o desfoque */
   background: rgba(0, 0, 0, 0.2); /* Fundo semitransparente */
   z-index: 10; /* Camada acima do conteúdo mas abaixo do card */
-  
-  
 }
 
+select:focus {
+  outline: none;
+}
 .swiper-lazy-loaded ~ .swiper-lazy-preloader {
   display: none !important;
 }
-

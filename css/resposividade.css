@@ -490,6 +490,13 @@
     width: 90% !important;
     height: auto !important;
   }
+
+  .InformacoesSecudanriasDoProjeto {
+
+    flex-direction: column;
+    gap: 10px;
+
+  }
 }
 
 @media (max-width: 400px) {
