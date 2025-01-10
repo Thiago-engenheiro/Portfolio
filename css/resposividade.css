@@ -434,6 +434,12 @@
   .buttonNomeProjeto {
     font-size: 20px;
   }
+
+  .Logo {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+  }
 }
 
 @media (max-width: 500px) {
@@ -492,10 +498,8 @@
   }
 
   .InformacoesSecudanriasDoProjeto {
-
     flex-direction: column;
     gap: 10px;
-
   }
 }
 
@@ -544,23 +548,17 @@
   }
 
   .categoria {
-
     height: 25px;
     font-size: 14px;
-
   }
 
-    .botaoVerProjeto {
-
+  .botaoVerProjeto {
     font-size: 15px;
-    }
+  }
 
-    .SetaVerMais {
-
-      width: 12px;
-
-    }
-
+  .SetaVerMais {
+    width: 12px;
+  }
 }
 
 @media (max-width: 340px) {

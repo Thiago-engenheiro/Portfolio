@@ -355,9 +355,34 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
+document.addEventListener("DOMContentLoaded", () => {
+  const loadingScreen = document.querySelector(".paginaDeCarregamento");
+  const content = document.querySelector(".pagina");
+  const nameElement = document.querySelector(".MeuNome");
+  const Cubos = document.querySelector(".banter-loader");
+  const listaLink =  document.querySelector(".ListaLinkApresentacao");
+
+ 
+  setTimeout(() => {
+
+    nameElement.classList.add("esconder"); 
+    Cubos.classList.add("esconder"); 
+
+  }, 4000); 
 
 
+  setTimeout(() => {
 
+    loadingScreen.classList.add("ocutar");
+
+ 
+    loadingScreen.addEventListener("transitionend", () => {
+      loadingScreen.style.display = "none"; 
+      content.style.display = "flex"; 
+      listaLink.style.display = "flex"; 
+    });
+  }, 5000); 
+});
 
 
   
