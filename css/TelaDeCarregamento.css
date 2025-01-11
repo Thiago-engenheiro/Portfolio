@@ -19,40 +19,41 @@
 
 .paginaDeCarregamento.ocutar {
 
-    opacity: 0; 
-    pointer-events: none;  
+  opacity: 0; 
+  pointer-events: none;  
 
 }
 
 .Logo {
 
-    position: absolute;
-    bottom: 50px;
-    right: 50px;
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
 
 }
 
 .MeuNome {
 
-    font-size: 25px;
-    opacity: 1; 
-    transition: opacity 0.5s ease, transform 0.5s ease; /
+  font-size: 25px;
+  opacity: 1; 
+  transition: opacity 0.5s ease, transform 0.5s ease; 
+  text-align: center;
 
 }
 
 .MeuNome.esconder {
 
-    opacity: 0; 
-    transform: translateX(20px); 
+  opacity: 0; 
+  transform: translateX(20px); 
 
 }
 
 .MeuNomeDestaque {
 
-    color: white;
-    font-family: var(--fonte04);
-    font-style: italic;
-    font-weight: 100;
+  color: white;
+  font-family: var(--fonte04);
+  font-style: italic;
+  font-weight: 100;
 
 }
 
@@ -80,6 +81,45 @@
     transform: translateX(20px); 
 
 }
+
+.LegendaCarregando {
+
+ margin: 75px 0px 0px 0px;
+
+}
+
+.LegendaCarregando::before {
+  content: "Carregando";
+  color: white;
+  animation: text 5s 0s infinite;
+}
+
+
+.LegendaCarregando.esconder {
+
+  opacity: 0; 
+  transform: translateX(20px); 
+
+}
+
+@keyframes text {
+  0% {
+    content: "Carregando";
+  }
+
+  30% {
+    content: "Carregando.";
+  }
+
+  60% {
+    content: "Carregando..";
+  }
+
+  100% {
+    content: "Carregando...";
+  }
+}
+
 
   
   .banter-loader__box {

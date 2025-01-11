@@ -361,12 +361,13 @@ document.addEventListener("DOMContentLoaded", () => {
   const nameElement = document.querySelector(".MeuNome");
   const Cubos = document.querySelector(".banter-loader");
   const listaLink =  document.querySelector(".ListaLinkApresentacao");
-
+  const LegendaCarregando =  document.querySelector(".LegendaCarregando");
  
   setTimeout(() => {
 
     nameElement.classList.add("esconder"); 
     Cubos.classList.add("esconder"); 
+    LegendaCarregando.classList.add("esconder"); 
 
   }, 4000); 
 
@@ -380,6 +381,7 @@ document.addEventListener("DOMContentLoaded", () => {
       loadingScreen.style.display = "none"; 
       content.style.display = "flex"; 
       listaLink.style.display = "flex"; 
+      
     });
   }, 5000); 
 });
