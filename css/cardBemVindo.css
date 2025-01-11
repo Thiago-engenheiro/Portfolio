@@ -10,8 +10,6 @@
   position: relative;
   isolation: isolate;
  
- 
-
 }
 
 .conteudoCard {
@@ -48,12 +46,11 @@
 
 .CardTitulo {
 
-    font-size: 40px;
-    font-family: var(--fonte02);
-    text-transform: uppercase;
-    font-weight: bold;
+  font-size: 40px;
+  font-family: var(--fonte02);
+  text-transform: uppercase;
+  font-weight: bold;
     
-
 }
 
 .silver-line {

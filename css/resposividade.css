@@ -502,6 +502,10 @@
     flex-direction: column;
     gap: 10px;
   }
+
+  .swiperEstilo {
+    margin: 0px 0px 80px 0px;
+  }
 }
 
 @media (max-width: 400px) {
@@ -559,6 +563,31 @@
 
   .SetaVerMais {
     width: 12px;
+  }
+
+  .CardTitulo {
+    font-size: 30px;
+  }
+
+  .title {
+    font-size: 18px;
+  }
+
+  .cardSemOFlip {
+    font-size: 18px;
+  }
+
+  .cardLinks {
+    width: 200px;
+  }
+
+  .continerExpandir:hover {
+    box-shadow: 1.5px 1.5px 14px -3px #ffffff;
+  }
+
+  .continerExpandir:active {
+    transform: scale(0.97);
+    box-shadow: 1.5px 1.5px 14px -3px #ffffff;
   }
 }
 
