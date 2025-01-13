@@ -1,6 +1,5 @@
 body {
-  background: hsl(0 0% 6%);
-  color: white;
+
   font-weight: 500;
   -webkit-text-size-adjust: none;
   text-size-adjust: none;
@@ -8,8 +7,54 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-family: var(--fonte01);
   box-sizing: border-box;
+  
+}
+
+body.dark-mode {
+  background: hsl(0 0% 6%);
+  color: white;
   mix-blend-mode: difference;
 }
+
+body.light-mode  {
+
+  background: hsl(0 0% 94%);;
+  color: black;
+  mix-blend-mode: normal;
+  
+}
+
+body.light-mode::before {
+  content: ""; 
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100vw; 
+  height: 100vh;
+  z-index: -1; 
+  background: conic-gradient(
+    from 180deg at 50% 70%,
+    hsla(0, 0%, 10%, 1) 0deg, 
+    #c39a25 72.0000010728836deg, 
+    #c03838 144.0000021457672deg,
+    #5a7a90 216.00000858306885deg, 
+    #3bcc9a 288.0000042915344deg, 
+    hsla(0, 0%, 10%, 1) 1turn 
+  );
+  width: 100%;
+  height: 100%;
+  mask:
+    radial-gradient(circle at 50% 50%, black 2px, transparent 2.5px) 50% 50% / var(--size) var(--size), /* Bolinhas pretas */
+    url("https://assets.codepen.io/605876/noise-mask.png") 256px 50% / 256px 256px;
+  mask-composite: intersect;
+  animation: flicker 20s infinite linear;
+ 
+}
+
+
+
+
+
 
 .pagina {
   display: flex;

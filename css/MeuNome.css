@@ -145,11 +145,10 @@
     
     .word {
   
-      display: block;
-      height: 100%;
-      color: black;
-      animation: spin_4991 15s infinite;
+    display: block;
+    height: 100%;
     background: white;
+    animation: spin_4991 15s infinite;
     background-position: 0;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -157,10 +156,22 @@
     animation-fill-mode: forwards;
     -webkit-text-size-adjust: none;
     overflow: hidden;
-        
+         
+    }
+
+    .word.dark-mode {
+
+      color: black;
+  
+       
+    }
+
+    .word.light-mode {
+  
+      color: white;
       
     }
-  
+
     .w1 { color: transparent; } /* React (azul escuro) */
     .w2 { color: #D84B16; } /* Front-End (laranja escuro) */
     .w3 { color: #E91E63; } /* UX Designer (rosa escuro) */

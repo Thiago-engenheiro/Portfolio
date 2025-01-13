@@ -2,7 +2,7 @@
 
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 10px;
     background: #171717;
     border: 1px solid #171717;
     box-shadow: inset 4px 4px 12px #3a3a3a,
@@ -11,7 +11,16 @@
     left: -100px;
     top: 150px;
     width: 57.33px;
-    height: 425px;
+    height: auto;
     align-items: center;
+    padding: 20px 0px;
 
 }
+
+.continerBotaoLingua {
+
+    background: transparent;
+    border: none;
+
+}
+
