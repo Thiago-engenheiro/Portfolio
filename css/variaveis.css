@@ -4,7 +4,7 @@
 @font-face {
 
     font-family: 'Gilroy-Light';
-    src: url('/src/extras/fontes/Gilroy-Light.ttf') format('truetype');
+    src: url('/Arquivos/fontes/Gilroy-Light.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 
@@ -13,7 +13,7 @@
 @font-face {
 
     font-family: 'Gilroy-SemiBold';
-    src: url('/src/extras/fontes/Gilroy-SemiBold.ttf') format('truetype');
+    src: url('/Arquivos/fontes/Gilroy-SemiBold.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 
@@ -22,7 +22,7 @@
 @font-face {
 
     font-family: 'Gilroy-ThinItalic';
-    src: url('/src/extras/fontes/Gilroy-ThinItalic.ttf') format('truetype');
+    src: url('/Arquivos/fontes/Gilroy-ThinItalic.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 
@@ -31,7 +31,7 @@
 @font-face {
 
     font-family: 'Gilroy-Thin';
-    src: url('/src/extras/fontes/Gilroy-Thin.ttf') format('truetype');
+    src: url('/Arquivos/fontes/Gilroy-Thin.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 
@@ -41,20 +41,20 @@
 @font-face {
     font-family: "Neue Montreal";
     font-weight: 200;
-    src: url("/src/extras/fontes/PPNeueMontreal-Thin.woff2") format("woff2")
+    src: url("/Arquivos/fontes/PPNeueMontreal-Thin.woff2") format("woff2")
     
 }
 
 @font-face {
     font-family: "Neue Montreal";
     font-weight: 400;
-    src: url("/src/extras/fontes/PPNeueMontreal-Book.woff2") format("woff2")
+    src: url("/Arquivos/fontes/PPNeueMontreal-Book.woff2") format("woff2")
 }
 
 @font-face {
     font-family: "Neue Montreal";
     font-weight: 600;
-    src: url("/src/extras/fontes/PPNeueMontreal-SemiBold.woff2") format("woff2")
+    src: url("/Arquivos/fontes/PPNeueMontreal-SemiBold.woff2") format("woff2")
 }
 
 :root {
