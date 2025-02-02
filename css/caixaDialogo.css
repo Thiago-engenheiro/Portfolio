@@ -50,10 +50,8 @@ dialog {
 */
 
 .continerConteudoDeTodoOProjeto {
-
   display: flex;
   flex-direction: column;
-
 }
 
 .continerOpcoesProjeto {
@@ -97,6 +95,7 @@ dialog {
 .continerMostraProjeto {
   display: flex;
   height: 100%;
+  width: 100%;
 }
 
 .continerDaImagemPrincipalDoProjeto {
@@ -113,6 +112,7 @@ dialog {
 .imagemProjeto {
   object-fit: contain;
   width: 100%;
+  height: 100%;
 }
 
 .fecharVerMaisProjeto {
@@ -157,8 +157,16 @@ dialog {
   overflow: hidden;
 }
 
+.BotaoMudarImagemPrincipal:has(.imagemPequenaProjeto[src=""]) {
+
+  display: none;
+
+}
+
 .imagemPequenaProjeto {
   width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .continerInformacoesDoProjeto {
