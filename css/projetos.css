@@ -36,9 +36,7 @@
 }
 
 .Primeiro__Rascunho__do__Portfólio {
-  
-  background-image: url("/Arquivos/imagens/Projetos/Meu__primeiro__portifolio-escuro.png") ;
-  
+  background-image: url("/Arquivos/imagens/Projetos/Meu__primeiro__portifolio-escuro.png");
 }
 
 .continerImagemDoProjeto {
@@ -48,7 +46,7 @@
   z-index: 1;
   width: calc(100% - 40px);
   height: 300px;
-  border-radius: 16px;
+  border-radius: 24px;
   padding: 20px;
   display: flex;
   justify-content: space-between;
@@ -60,41 +58,38 @@
 }
 
 .Primeiro__Rascunho__do__Portfólio::before {
-  content: ""; 
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   background-image: url("/Arquivos/imagens/Projetos/cardFolio black.png");
-  background-size: cover; 
-  background-position: center; 
-  opacity: 0.6; 
-  z-index: -1; 
+  background-size: cover;
+  background-position: center;
+  opacity: 0.6;
+  z-index: -1;
+  border-radius: 24px;
 }
 
 .AtualProjeto {
-
   position: relative;
-
 }
 
 .AtualProjeto::before {
-  
-  content: ""; 
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   background-image: url("/Arquivos/imagens/cartãoDeVisita/secundario.png");
-  background-size: cover; 
-  background-position: center; 
-  opacity: 0.6; 
+  background-size: cover;
+  background-position: center;
+  opacity: 0.6;
   z-index: -1;
+  border-radius: 24px;
 }
-
-
 
 .botaoVerProjeto {
   font-family: inherit;
@@ -169,7 +164,12 @@ button span {
 }
 
 .Figma {
-  background: blueviolet;
+  background: linear-gradient(to right, #7e22ce, #6b21a8, #581c87);
+}
+
+.Canva {
+  background: linear-gradient(to right, #facc15, #eab308, #ca8a04);
+  color: black;
 }
 
 .tagsProjeto {
